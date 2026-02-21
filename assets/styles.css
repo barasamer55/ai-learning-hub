@@ -1,0 +1,72 @@
+.radial-progress-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+}
+
+.radial-progress-bg {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+}
+
+.radial-progress-inner {
+    position: absolute;
+    border-radius: 9999px;
+    background-color: #181b2c;
+    width: 85%;
+    height: 85%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #101322; 
+}
+::-webkit-scrollbar-thumb {
+    background: #282b39; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3b3f54; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Heatmap blocks */
+.heatmap-grid {
+    display: flex;
+    gap: 4px;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.heatmap-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.heatmap-block {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+.bg-heatmap-0 { background-color: #1a1d2d; }
+.bg-heatmap-1 { background-color: rgba(19, 55, 236, 0.2); }
+.bg-heatmap-2 { background-color: rgba(19, 55, 236, 0.4); }
+.bg-heatmap-3 { background-color: rgba(19, 55, 236, 0.7); }
+.bg-heatmap-4 { background-color: #1337ec; }
